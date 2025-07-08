@@ -1,4 +1,4 @@
-# 💳 JPayment Analysis Project
+# 💳 Payment Analysis Project
 
 A complete end-to-end data analysis project focused on payment transactions — designed to reflect real-world business insights and product thinking. This project simulates a payment funnel analysis.
 > 📈 Technologies used: **SQL**, **R**, **ggplot2**, **dplyr** and **GitHub**
