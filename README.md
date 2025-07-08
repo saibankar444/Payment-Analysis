@@ -1,6 +1,6 @@
-# 💳 Juspay Payment Analysis Project
+# 💳 Payment Analysis Project
 
-A complete end-to-end data analysis project focused on payment transactions — designed to reflect real-world business insights and product thinking. This project simulates a payment funnel analysis similar to what companies like **Juspay** deal with at scale.
+A complete end-to-end data analysis project focused on payment transactions — designed to reflect real-world business insights and product thinking. This project simulates a payment funnel analysis.
 
 > 📈 Technologies used: **SQL**, **R**, **ggplot2**, **dplyr**, and **GitHub**
 
