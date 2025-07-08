@@ -1,71 +1,77 @@
-💳 Juspay Payment Analysis Project
+# 💳 Juspay Payment Analysis Project
 
-A mini data analysis project to uncover key trends in payment transactions such as failure rates, successful amounts, time-based spikes, and high-value contributors. This project is tailored to reflect the type of data-driven thinking required for Product Software Engineer (PSE) role at Juspay.
+A complete end-to-end data analysis project focused on payment transactions — designed to reflect real-world business insights and product thinking. This project simulates a payment funnel analysis similar to what companies like **Juspay** deal with at scale.
 
----
-
-📌 Objective
-
-To analyze transaction data from a payment system and identify:
-- Most reliable payment methods
-- Peak failure times
-- High-value customer activity
-- Improvement areas for conversion optimization
+> 📈 Technologies used: **SQL**, **R**, **ggplot2**, **dplyr**, and **GitHub**
 
 ---
 
-🧰 Tools & Technologies
+## 📌 Objective
 
-- SQL (DB Fiddle): Querying and aggregating transaction data
-- R: Data cleaning, transformation, and visualization
-- ggplot2: Creating insightful charts
-- dplyr: Data grouping and filtering
-- Tableau for dashboarding
+To analyze a dataset of payment transactions in order to:
+- Identify the most reliable and high-performing payment methods
+- Detect patterns in failed transactions
+- Discover time-based spikes and trends
+- Recommend actionable product improvements
 
 ---
 
-📊 SQL Insights
+## 🧰 Tools & Technologies
 
-> Performed in [DB Fiddle](https://db-fiddle.com/) (schema and inserts in `queries.sql`)
---------------------------------------------------------------
-| Metric                      | Value                        |
-|-----------------------------|------------------------------|
-| ✅ Total Successful Amount | ₹3,62,378.30                  |
-| ❌ Failed Transactions     | 49 out of 200                 |
-| 🏦 Top Payment Method      | UPI (Highest revenue)         |
-| 📉 Worst Performer         | Wallet (Highest failure rate) |
-| 🕒 Peak Failure Hours      | 3PM and 9PM                   |
-| 🏆 Highest Transaction     | ₹4,949 via Card               |
----------------------------------------------------------------
+| Tool          | Purpose                          |
+|---------------|----------------------------------|
+| R             | Data processing & visualization |
+| ggplot2       | Graphs and plots                 |
+| dplyr         | Data manipulation                |
+| SQL (DB Fiddle) | Querying & aggregating data     |
+| Git & GitHub  | Version control & publishing     |
+
 ---
 
-📈 Visualizations
+## 📊 SQL Analysis Summary
 
-> All visuals created using **R + ggplot2**  
-> Screenshots are in the `/Output_ScreenShots/` folder
+All SQL queries were performed using [DB Fiddle](https://www.db-fiddle.com/).  
+The schema and insert statements are available in `scripts/queries.sql`.
+
+| Metric                  | Value             |
+|-------------------------|------------------|
+| ✅ Total Transactions    | 200               |
+| 💰 Total Success Amount  | ₹3,62,378.30      |
+| ❌ Failed Transactions   | 49                |
+| 🏦 Top Payment Method    | UPI               |
+| 📉 Highest Failure Rate  | Wallet            |
+| 🕒 Peak Failure Hours    | 3PM & 9PM         |
+| 🏆 Top Transaction       | ₹4,949 via Card   |
+
+---
+
+## 📈 Visualizations (via R + ggplot2)
+
+All charts were created using R and saved as `.jpg` files in the `screenshots/` folder.
 
 ### 1. Payment Status Distribution
-![Status Distribution](Output_ScreenShots/Plot_1.png)
+![Status Distribution](Plot_1.jpg)
 
 ### 2. Successful Amount per Payment Method
-![Success Amount](Output_ScreenShots/Plot_2.png)
+![Success Amount](Plot_2.jpg)
 
 ### 3. Failure Rate by Payment Method
-![Failure Rate](Output_ScreenShots/Plot_3.png)
+![Failure Rate](Plot_3.jpg)
 
 ### 4. Failed Transactions by Hour
-![Failures by Hour](Output_ScreenShots/Plot_4.png)
+![Failures by Hour](Plot_4.jpg)
 
 ---
 
-💡 Recommendations
+## 💡 Recommendations
 
-- Implement retry logic for **wallet payments**
-- Prioritize **UPI and Netbanking** as default options
-- Apply **gateway switch or backup** during peak failure hours (e.g., 15:00–16:00, 21:00–22:00)
-- Monitor high-value users for custom incentives
+Based on the analysis:
+- Implement retry logic for **Wallet** payments (highest failure rate)
+- Set **UPI** as default method (highest revenue contributor)
+- Apply **gateway switching** or backups during peak failure hours (15:00 & 21:00)
+- Monitor top customers (high-value payments) for special care
 
 ---
 
-
+## 📁 Project Structure
 
