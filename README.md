@@ -2,7 +2,7 @@
 
 A complete end-to-end data analysis project focused on payment transactions — designed to reflect real-world business insights and product thinking. This project simulates a payment funnel analysis.
 
-> 📈 Technologies used: **SQL**, **R**, **ggplot2**, **dplyr**, and **GitHub**
+> 📈 Technologies used: **SQL**, **R**, **ggplot2**, **dplyr** and **GitHub**
 
 ---
 
@@ -47,7 +47,7 @@ The schema and insert statements are available in `scripts/queries.sql`.
 
 ## 📈 Visualizations (via R + ggplot2)
 
-All charts were created using R and saved as `.jpg` files in the `screenshots/` folder.
+
 
 ### 1. Payment Status Distribution
 ![Status Distribution](Plot_1.jpg)
@@ -73,5 +73,5 @@ Based on the analysis:
 
 ---
 
-## 📁 Project Structure
+
 
