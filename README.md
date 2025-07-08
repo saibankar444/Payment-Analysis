@@ -1,7 +1,6 @@
-# 💳 Payment Analysis Project
+# 💳 JPayment Analysis Project
 
 A complete end-to-end data analysis project focused on payment transactions — designed to reflect real-world business insights and product thinking. This project simulates a payment funnel analysis.
-
 > 📈 Technologies used: **SQL**, **R**, **ggplot2**, **dplyr** and **GitHub**
 
 ---
@@ -20,7 +19,7 @@ To analyze a dataset of payment transactions in order to:
 
 | Tool          | Purpose                          |
 |---------------|----------------------------------|
-| R             | Data processing & visualization |
+| R             | Data processing & visualization  |
 | ggplot2       | Graphs and plots                 |
 | dplyr         | Data manipulation                |
 | SQL (DB Fiddle) | Querying & aggregating data     |
@@ -31,7 +30,7 @@ To analyze a dataset of payment transactions in order to:
 ## 📊 SQL Analysis Summary
 
 All SQL queries were performed using [DB Fiddle](https://www.db-fiddle.com/).  
-The schema and insert statements are available in `scripts/queries.sql`.
+The schema and insert statements are available in `queries.sql`.
 
 | Metric                  | Value             |
 |-------------------------|------------------|
@@ -47,19 +46,19 @@ The schema and insert statements are available in `scripts/queries.sql`.
 
 ## 📈 Visualizations (via R + ggplot2)
 
-
+All charts were created using R and saved as `.jpg` files in the `screenshots/` folder.
 
 ### 1. Payment Status Distribution
-![Status Distribution](Plot_1.jpg)
+![Status Distribution](Screenshots/status_plot.jpg)
 
 ### 2. Successful Amount per Payment Method
-![Success Amount](Plot_2.jpg)
+![Success Amount](Screenshots/success_by_method.jpg)
 
 ### 3. Failure Rate by Payment Method
-![Failure Rate](Plot_3.jpg)
+![Failure Rate](Screenshots/failure_rate.jpg)
 
 ### 4. Failed Transactions by Hour
-![Failures by Hour](Plot_4.jpg)
+![Failures by Hour](Screenshots/failures_by_hour.jpg)
 
 ---
 
@@ -72,6 +71,5 @@ Based on the analysis:
 - Monitor top customers (high-value payments) for special care
 
 ---
-
 
 
